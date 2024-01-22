@@ -60,18 +60,12 @@ public class SwerveDrive {
         double frontRightAngle = (Math.atan2(b, d) / Math.PI)*20*.1;
         double frontLeftAngle = (Math.atan2(b, c) / Math.PI)*20*.1;
 
-        SmartDashboard.putNumber("Back right angle test?", backRightAngle);
+
         SmartDashboard.putNumber("A val", a);
         SmartDashboard.putNumber("B val", b);
         SmartDashboard.putNumber("C val", c);
         SmartDashboard.putNumber("D Val", d);
 
-        if (x2>=0){
-            posnegTwo = 1;
-        
-        } else if (x2<= 0){
-            posnegTwo = 0;
-        }
         if(x1>=0){
             posneg=1;
         } else if(x1<=0){
